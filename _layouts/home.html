@@ -3,32 +3,46 @@ layout: default
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
+  {%- if paginator.page == 1 -%}
   <div class="home-intro">
     <p class="home-intro__lede">
-      <strong>Volume I: The Governed Decision Layer.</strong>
-      Essays on why industrial AI needs an engineered, auditable decision layer between
-      prediction and action &mdash; and what it takes to build one.
+      Essays on why industrial AI needs an engineered, auditable decision layer
+      between prediction and action &mdash; and what it takes to build one.
     </p>
   </div>
+  {%- endif -%}
 
   {{ content }}
+
+  {%- assign the_posts = paginator.posts | default: site.posts -%}
 
   {%- if site.posts.size > 0 -%}
     <div class="section-heading-row">
       <h2 class="post-list-heading">Essays</h2>
-      <p class="section-heading-row__meta">New essay every 10&ndash;14 days</p>
+      <div class="essay-search">
+        <input
+          type="search"
+          id="essay-search-input"
+          class="essay-search__input"
+          placeholder="Search essays by title&hellip;"
+          aria-label="Search essays by title"
+        />
+        <ul id="essay-search-results" class="essay-search__results" hidden></ul>
+      </div>
     </div>
 
-    <ul class="post-list">
-      {%- for post in site.posts -%}
+    <ul class="post-list" id="essay-post-list">
+      {%- for post in the_posts -%}
       <li class="post-card">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {%- assign words = post.content | number_of_words -%}
+        {%- assign plain_content = post.content | strip_html -%}
+        {%- assign words = plain_content | number_of_words -%}
         {%- assign read_mins = words | divided_by: 200 -%}
+        {%- if post.image -%}
+        <a href="{{ post.url | relative_url }}" class="post-card__image-link">
+          <img class="post-card__image" src="{{ post.image | relative_url }}" alt="" loading="lazy" />
+        </a>
+        {%- endif -%}
         <div class="post-card__meta">
           {%- if post.category -%}
             <span class="badge badge--{{ post.category }}">{{ post.category | capitalize }}</span>
@@ -51,6 +65,7 @@ layout: default
       </li>
       {%- endfor -%}
 
+      {%- if paginator.page == paginator.total_pages -%}
       <li class="post-card post-card--upcoming">
         <div class="post-card__meta">
           <span class="badge badge--upcoming">Next essay</span>
@@ -64,7 +79,20 @@ layout: default
           to get it first.
         </p>
       </li>
+      {%- endif -%}
     </ul>
+
+    {%- if paginator.total_pages > 1 -%}
+    <nav class="pagination-nav" aria-label="Essay pagination">
+      {%- if paginator.previous_page -%}
+        <a class="pagination-nav__link" href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer essays</a>
+      {%- endif -%}
+      <span class="pagination-nav__status">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      {%- if paginator.next_page -%}
+        <a class="pagination-nav__link pagination-nav__link--next" href="{{ paginator.next_page_path | relative_url }}">See more essays &rarr;</a>
+      {%- endif -%}
+    </nav>
+    {%- endif -%}
 
     <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}

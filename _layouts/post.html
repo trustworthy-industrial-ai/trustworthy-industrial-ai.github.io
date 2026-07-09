@@ -7,7 +7,6 @@ layout: default
     {%- if page.category -%}
       <p class="post-eyebrow">
         <span class="badge badge--{{ page.category }}">{{ page.category | capitalize }}</span>
-        <span class="post-eyebrow__volume">Volume I &middot; The Governed Decision Layer</span>
       </p>
     {%- endif -%}
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
@@ -16,7 +15,8 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
-      {%- assign words = content | number_of_words -%}
+      {%- assign plain_content = content | strip_html -%}
+      {%- assign words = plain_content | number_of_words -%}
       {%- assign read_mins = words | divided_by: 200 -%}
       <span class="post-meta--dot">&middot;</span>
       {{ read_mins | at_least: 1 }} min read
