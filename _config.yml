@@ -1,10 +1,10 @@
 # Engineering Trustworthy Industrial AI — site configuration
 
 title: Engineering Trustworthy Industrial AI
+author: Sanjay Prasad
 email: hello@trustworthy-industrial-ai.io
 description: >-
   Research and essays on engineering trust into industrial AI systems.
-  Volume I: The Governed Decision Layer.
 baseurl: ""
 url: "https://trustworthy-industrial-ai.github.io"
 twitter_username:
@@ -16,6 +16,15 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-paginate-v2
+
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: "/page/:num/"
+  title: ":title &mdash; page :num"
+  sort_field: "date"
+  sort_reverse: true
 
 # Collections for organizing essays by research domain
 collections:

@@ -1,0 +1,16 @@
+# Volume tags — a SEPARATE axis from research_domains.yml.
+# research_domains.yml = which of the 7 research domains an essay belongs to
+#   (Knowledge / Reasoning / Decisions / Agents / Platforms / Deployment / Products)
+# volume_tags.yml = what KIND of essay it is within its volume
+#   (Case / Framework / Critique / Field Note / etc.)
+#
+# Not wired into any layout yet — placeholder for a future per-post
+# `volume_tag:` front matter field once the pattern across essays is clear.
+# Example intent:
+#   Volume I  -> Case       (essays making the case for a governed decision layer)
+#   Volume II -> Framework  (essays introducing structured methodology)
+
+- volume: "Volume I"
+  tag: "Case"
+- volume: "Volume II"
+  tag: "Framework"

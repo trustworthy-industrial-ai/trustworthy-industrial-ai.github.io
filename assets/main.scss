@@ -24,7 +24,7 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 16.5px;
 }
 
 body {
@@ -95,32 +95,32 @@ h1, h2, h3, .page-heading, .post-title, .site-title {
   font-family: Georgia, "Iowan Old Style", serif;
   font-style: italic;
   color: var(--muted);
-  font-size: 1rem;
-  margin: 0.35rem 0 1.1rem;
+  font-size: 0.92rem;
+  margin: 0.3rem 0 0.75rem;
 }
 
 .domains-strip {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  padding-bottom: 1.25rem;
+  gap: 0.4rem;
+  padding-bottom: 0.9rem;
 }
 
 .domains-strip__label {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 0.68rem;
+  font-size: 0.62rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--faint);
-  margin-right: 0.35rem;
+  margin-right: 0.3rem;
 }
 
 .domains-strip__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 0.35rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -128,9 +128,9 @@ h1, h2, h3, .page-heading, .post-title, .site-title {
 
 .domain-pill {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.66rem;
   font-weight: 600;
-  padding: 0.22rem 0.65rem;
+  padding: 0.16rem 0.5rem;
   border-radius: 999px;
   cursor: default;
 }
@@ -146,25 +146,39 @@ h1, h2, h3, .page-heading, .post-title, .site-title {
   border: 1px solid var(--border);
 }
 
+.domain-pill--all {
+  background: var(--accent-light);
+  border: 1px solid transparent;
+}
+
+.domain-pill--all a {
+  color: var(--accent);
+  border-bottom: none !important;
+}
+
+.domain-pill--all:hover {
+  background: var(--accent);
+}
+
+.domain-pill--all:hover a {
+  color: #fff;
+}
+
 // ------------------------------------------------------------
 // Home page
 // ------------------------------------------------------------
 
-.page-heading {
-  display: none; // title is redundant with site header
-}
-
 .home-intro {
-  padding: 1.75rem 0 0.5rem;
+  padding: 1.1rem 0 0.4rem;
   border-bottom: 1px solid var(--border);
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.25rem;
 }
 
 .home-intro__lede {
   font-family: Georgia, "Iowan Old Style", serif;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: var(--ink);
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--muted);
   max-width: 42rem;
 }
 
@@ -185,10 +199,74 @@ h1, h2, h3, .page-heading, .post-title, .site-title {
   color: var(--muted);
 }
 
-.section-heading-row__meta {
+.essay-search {
+  position: relative;
+  width: 100%;
+  max-width: 16rem;
+}
+
+.essay-search__input {
+  width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 0.85rem;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--ink);
+  background: var(--bg-subtle);
+}
+
+.essay-search__input:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: #fff;
+}
+
+.essay-search__results {
+  position: absolute;
+  z-index: 10;
+  top: calc(100% + 0.3rem);
+  right: 0;
+  width: 20rem;
+  max-width: 80vw;
+  margin: 0;
+  padding: 0.3rem 0;
+  list-style: none;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(26, 31, 43, 0.08);
+}
+
+.essay-search__results li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding: 0.45rem 0.8rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.85rem;
+}
+
+.essay-search__results li:hover {
+  background: var(--bg-subtle);
+}
+
+.essay-search__results a {
+  border-bottom: none !important;
+  color: var(--ink);
+  flex: 1;
+}
+
+.essay-search__date {
   color: var(--faint);
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.essay-search__empty {
+  color: var(--faint);
+  font-style: italic;
 }
 
 .post-list {
@@ -199,6 +277,20 @@ h1, h2, h3, .page-heading, .post-title, .site-title {
 .post-card {
   padding: 1.4rem 0;
   border-bottom: 1px solid var(--border);
+}
+
+.post-card__image-link {
+  display: block;
+  border-bottom: none !important;
+  margin-bottom: 0.75rem;
+}
+
+.post-card__image {
+  width: 100%;
+  max-height: 14rem;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
 }
 
 .post-card__meta {
@@ -263,6 +355,32 @@ h1, h2, h3, .page-heading, .post-title, .site-title {
   color: var(--faint);
 }
 
+.pagination-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.88rem;
+}
+
+.pagination-nav__link {
+  font-weight: 600;
+  border-bottom: none !important;
+}
+
+.pagination-nav__link--next {
+  margin-left: auto;
+}
+
+.pagination-nav__status {
+  color: var(--faint);
+  font-size: 0.8rem;
+  margin: 0 0.75rem;
+}
+
 // ------------------------------------------------------------
 // Badges
 // ------------------------------------------------------------
@@ -290,16 +408,7 @@ h1, h2, h3, .page-heading, .post-title, .site-title {
 // ------------------------------------------------------------
 
 .post-eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
   margin-bottom: 0.6rem;
-}
-
-.post-eyebrow__volume {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 0.82rem;
-  color: var(--faint);
 }
 
 .post-title {
@@ -341,52 +450,52 @@ h1, h2, h3, .page-heading, .post-title, .site-title {
 .site-footer {
   border-top: 1px solid var(--border);
   background: var(--bg-subtle);
+  padding: 1.5rem 0 1.75rem;
 }
 
-.footer-heading {
-  font-size: 1.1rem;
-  margin-bottom: 0.8rem;
-}
-
-.footer-col-wrapper {
+.footer-row {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 0.9rem;
-  color: var(--muted);
+  font-size: 0.8rem;
+  color: var(--faint);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
 }
 
-.contact-list, .social-media-list {
-  list-style: none;
-  margin-left: 0;
+.footer-row a {
+  color: var(--faint);
+  font-weight: 500;
+}
+
+.footer-row a:hover {
+  color: var(--accent);
+}
+
+.footer-row__dot {
+  color: var(--border);
 }
 
 .footer-email-signup {
-  margin-top: 1.75rem;
-  padding: 1.25rem 1.5rem;
+  margin-top: 1.1rem;
+  padding: 1rem 1.25rem;
   background: #fff;
   border: 1px solid var(--border);
   border-radius: 8px;
+  max-width: 26rem;
 }
 
 .footer-email-signup h3 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  margin: 0 0 0.6rem;
+  margin: 0 0 0.5rem;
   color: var(--ink);
 }
 
 .email-signup-placeholder {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 0.88rem;
-  color: var(--faint);
-}
-
-.footer-links {
-  margin-top: 1.5rem;
-}
-
-.footer-links small {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.82rem;
   color: var(--faint);
 }
 

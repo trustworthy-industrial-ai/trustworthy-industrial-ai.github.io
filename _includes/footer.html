@@ -3,31 +3,18 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
+    <div class="footer-row">
+      <span class="p-name">{{ site.author | escape }}</span>
+      {%- if site.email -%}
+        <span class="footer-row__dot">&middot;</span>
+        <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      {%- endif -%}
+      <span class="footer-row__dot">&middot;</span>
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+      <span class="footer-row__dot">&middot;</span>
+      <a href="{{ "/about/" | relative_url }}">About</a>
+      <span class="footer-row__dot">&middot;</span>
+      <a href="https://github.com/{{ site.github_username }}/{{ site.github_username }}.github.io/blob/main/RESEARCH-ROADMAP.md">Research Roadmap</a>
     </div>
 
     <div class="footer-email-signup">
@@ -35,16 +22,8 @@
       {% include email-signup.html %}
     </div>
 
-    <div class="footer-links">
-      <p>
-        <small>
-          <a href="https://github.com/trustworthy-industrial-ai">GitHub</a> ·
-          <a href="{{ "/about/" | relative_url }}">About</a> ·
-          <a href="https://github.com/trustworthy-industrial-ai/trustworthy-industrial-ai.github.io/blob/main/RESEARCH-ROADMAP.md">Research Roadmap</a>
-        </small>
-      </p>
-    </div>
-
   </div>
+
+  <script src="{{ "/assets/js/site.js" | relative_url }}" defer></script>
 
 </footer>
