@@ -1,4 +1,4 @@
-# pages
+# Trustworth Industrial AI
 Essays and research site
 
 
