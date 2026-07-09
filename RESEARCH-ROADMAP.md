@@ -220,3 +220,26 @@ This initiative will be considered successful when:
 Technology will continue to evolve.
 
 The objective of this initiative is not to follow every technology trend, but to establish enduring engineering principles for Trustworthy Industrial AI.
+
+# Current Focus
+
+## Now (2026–2027)
+
+- Volume I: The Governed Decision Layer
+- 17-part research essay series
+- GitHub Pages launch
+- Initial reference frameworks
+
+## Next (2027–2029)
+
+- Volume II: Grounded Reasoning
+- Volume III: Engineering Knowledge
+- Initial open-source tooling
+- Conference workshops
+
+## Later (2030+)
+
+- Industrial AI Platform reference architecture
+- Community governance
+- Standards engagement
+- Educational material and certification
