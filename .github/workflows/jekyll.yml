@@ -3,6 +3,8 @@ name: Build and deploy Jekyll site
 on:
   push:
     branches: ["main"]
+  pull_request:
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -42,6 +44,7 @@ jobs:
           path: "_site"
 
   deploy:
+    if: github.event_name == 'push'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
