@@ -6,7 +6,11 @@
     </li>
     {%- for domain in site.data.research_domains -%}
     <li class="domain-pill domain-pill--{{ domain.status }}" title="{{ domain.volume }} — {{ domain.status | capitalize }}">
-      <span class="domain-pill__name">{{ domain.short }}</span>
+      {%- if domain.url -%}
+        <a href="{{ domain.url | relative_url }}">{{ domain.short }}</a>
+      {%- else -%}
+        <span class="domain-pill__name">{{ domain.short }}</span>
+      {%- endif -%}
     </li>
     {%- endfor -%}
   </ul>
