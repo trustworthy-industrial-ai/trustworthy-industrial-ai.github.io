@@ -44,6 +44,9 @@ Definitions contained in this document supersede earlier informal usage unless e
 ## Engineering Trustworthy Industrial AI
 
 **Status:** Foundational
+**Version:** 1.0
+
+
 
 **Definition**
 
@@ -54,6 +57,8 @@ An engineering discipline focused on designing Industrial AI systems that earn t
 ## Engineering Knowledge
 
 **Status:** Foundational
+**Version:** 1.0
+
 
 **Definition**
 
@@ -64,6 +69,8 @@ The body of engineering expertise—including standards, procedures, physical pr
 ## Grounded Reasoning
 
 **Status:** Foundational
+**Version:** 1.0
+
 
 **Definition**
 
@@ -78,6 +85,8 @@ Grounded reasoning precedes trustworthy operational decisions.
 ## The Governed Decision Layer
 
 **Status:** Canonical
+**Version:** 1.0
+
 
 **First Introduced**
 
@@ -92,6 +101,8 @@ The architectural layer between reasoning and operational action responsible for
 ## ASSET-grade
 
 **Status:** Canonical
+**Version:** 1.0
+
 
 **Definition**
 
@@ -112,6 +123,8 @@ Additional letters should not be appended.
 ## Trustworthy Decision
 
 **Status:** Canonical
+**Version:** 1.0
+
 
 **Definition**
 
@@ -126,6 +139,7 @@ Trustworthiness is an emergent engineering property rather than a model characte
 ## Earned Autonomy
 
 **Status:** Emerging
+
 
 **Definition**
 
@@ -152,6 +166,8 @@ This term refers to operational decisions—not deterministic AI.
 ## "Who Signs?"
 
 **Status:** Canonical
+**Version:** 1.0
+
 
 **Definition**
 
