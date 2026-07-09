@@ -35,12 +35,8 @@ The other six areas aren't a committed calendar — they're the directions this 
 
 ### About the author
 
-<!-- PLACEHOLDER — replace with real bio. Suggested shape: current
-     role/title, the relevant background that makes this credible
-     (years in industrial reliability/asset management, standards work,
-     etc.), one sentence on why this research program exists. Keep it to
-     2-4 sentences; link LinkedIn/other profile if desired. -->
+Dr. Sanjay Prasad is a Distinguished Engineer and CTO with over 30 years of experience across mining, energy, and manufacturing. His work sits at the point where AI ambition becomes an executable, governed commitment — bridging C-suite transformation agendas with the operating realities of asset-intensive industries.
 
-Sanjay Prasad leads this research program.
+He holds a PhD from IIT Delhi, a PGDM from IIM Ahmedabad, and a B.Tech from IIT Dhanbad, and holds multiple patents and publications in optimization and applied AI. He advises the Technology Innovation Hub (Mining) at IIT (ISM) Dhanbad and chairs the IIMA&ndash;ORSI Practice Prize, recognizing best-in-class applied analytics practice.
 
-*[Bio placeholder — see comment above]*
+[Connect on LinkedIn](https://www.linkedin.com/in/drsanjayprasad/)
