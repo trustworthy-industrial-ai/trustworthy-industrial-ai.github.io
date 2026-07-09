@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+
+message: >
+  If you use this research, please cite it using the metadata below.
+
+title: "Engineering Trustworthy Industrial AI"
+
+authors:
+  - family-names: "Prasad"
+    given-names: "Sanjay"
+
+type: software
+
+abstract: >
+  Engineering Trustworthy Industrial AI is an open research initiative
+  focused on engineering trust into industrial AI systems through
+  engineering knowledge, grounded reasoning, decision governance,
+  industrial agents, and operational deployment.
+
+repository-code: "https://github.com/trustworthy-industrial-ai/<repository>"
+
+url: "https://trustworthy-industrial-ai.github.io"
+
+license: "CC-BY-4.0"
+
+keywords:
+  - Industrial AI
+  - Trustworthy AI
+  - Industrial Agents
+  - Decision Governance
+  - Grounded Reasoning
+  - Engineering Knowledge
+  - Explainable AI
+  - Industrial Systems
+  - Digital Twins
+
+version: "1.0.0"
+
+date-released: "2026-07-09"
+
+preferred-citation:
+  type: report
+  authors:
+    - family-names: "Prasad"
+      given-names: "Sanjay"
+
+  title: "Engineering Trustworthy Industrial AI"
+
+  institution:
+    name: "Engineering Trustworthy Industrial AI Research Initiative"
+
+  year: 2026
+
+  url: "https://trustworthy-industrial-ai.github.io"
