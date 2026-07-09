@@ -1,0 +1,72 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  <div class="home-intro">
+    <p class="home-intro__lede">
+      <strong>Volume I: The Governed Decision Layer.</strong>
+      Essays on why industrial AI needs an engineered, auditable decision layer between
+      prediction and action &mdash; and what it takes to build one.
+    </p>
+  </div>
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <div class="section-heading-row">
+      <h2 class="post-list-heading">Essays</h2>
+      <p class="section-heading-row__meta">New essay every 10&ndash;14 days</p>
+    </div>
+
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li class="post-card">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- assign words = post.content | number_of_words -%}
+        {%- assign read_mins = words | divided_by: 200 -%}
+        <div class="post-card__meta">
+          {%- if post.category -%}
+            <span class="badge badge--{{ post.category }}">{{ post.category | capitalize }}</span>
+          {%- endif -%}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <span class="post-meta post-meta--dot">&middot;</span>
+          <span class="post-meta">{{ read_mins | at_least: 1 }} min read</span>
+        </div>
+        <h3 class="post-card__title">
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if post.description -%}
+          <p class="post-card__excerpt">{{ post.description }}</p>
+        {%- elsif site.show_excerpts -%}
+          <p class="post-card__excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        {%- endif -%}
+        <a class="post-card__read-more" href="{{ post.url | relative_url }}">Read essay &rarr;</a>
+      </li>
+      {%- endfor -%}
+
+      <li class="post-card post-card--upcoming">
+        <div class="post-card__meta">
+          <span class="badge badge--upcoming">Next essay</span>
+        </div>
+        <h3 class="post-card__title post-card__title--muted">
+          The next industrial catastrophe will involve an overconfident AI
+        </h3>
+        <p class="post-card__excerpt">
+          In process safety, a confident wrong answer is categorically worse than a refusal.
+          Publishing soon &mdash; <a href="{{ "/feed.xml" | relative_url }}">subscribe via RSS</a>
+          to get it first.
+        </p>
+      </li>
+    </ul>
+
+    <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+
+</div>

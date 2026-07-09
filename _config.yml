@@ -51,6 +51,7 @@ kramdown:
   syntax_highlighter: rouge
 
 permalink: /essays/:year/:month/:day/:title/
+show_excerpts: true
 
 # Exclude from processing
 exclude:

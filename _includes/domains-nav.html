@@ -1,0 +1,10 @@
+<div class="domains-strip">
+  <span class="domains-strip__label">Research Program</span>
+  <ul class="domains-strip__list">
+    {%- for domain in site.data.research_domains -%}
+    <li class="domain-pill domain-pill--{{ domain.status }}" title="{{ domain.volume }} — {{ domain.status | capitalize }}">
+      <span class="domain-pill__name">{{ domain.short }}</span>
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>

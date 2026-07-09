@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    {%- if page.category -%}
+      <p class="post-eyebrow">
+        <span class="badge badge--{{ page.category }}">{{ page.category | capitalize }}</span>
+        <span class="post-eyebrow__volume">Volume I &middot; The Governed Decision Layer</span>
+      </p>
+    {%- endif -%}
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- assign words = content | number_of_words -%}
+      {%- assign read_mins = words | divided_by: 200 -%}
+      <span class="post-meta--dot">&middot;</span>
+      {{ read_mins | at_least: 1 }} min read
+      {%- if page.author -%}
+        <span class="post-meta--dot">&middot;</span>
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}
+    </p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    <a class="post-footer__back" href="{{ "/" | relative_url }}">&larr; Back to all essays</a>
+  </footer>
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
