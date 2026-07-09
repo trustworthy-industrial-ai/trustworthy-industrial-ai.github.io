@@ -1,0 +1,8 @@
+| Status           | Meaning                                                                                                                                             | Stability | Can change?                        |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ---------------------------------- |
+| **Foundational** | Core principles that define the long-term vision and identity of the research initiative. Expected to remain stable for many years.                 | Very High | Rarely                             |
+| **Canonical**    | Officially adopted concepts, frameworks, terminology, or architectural patterns that have been formally introduced and are recommended for use.     | High      | Occasionally, with version history |
+| **Emerging**     | Concepts that have been introduced publicly but are still evolving through research, feedback, and practical application.                           | Medium    | Yes                                |
+| **Working**      | Active research ideas under development. Shared to stimulate discussion but not yet recommended as stable terminology.                              | Low       | Frequently                         |
+| **Experimental** | Early hypotheses, prototypes, or speculative ideas. Included for transparency and collaboration, but should not be treated as established guidance. | Very Low  | Expected                           |
+| **Deprecated**   | Concepts or terminology retained for historical context but no longer recommended for new work.                                                     | Frozen    | No                                 |
