@@ -3,7 +3,7 @@ layout: post
 title: "AI predicts. Agents act. But who decides?"
 description: "The decision layer is industrial AI's missing middle."
 date: 2026-07-09
-category: governance
+tags: [governed-decision-layer, who-signs]
 excerpt_separator: <!--more-->
 ---
 

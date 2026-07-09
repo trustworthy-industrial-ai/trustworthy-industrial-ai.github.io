@@ -1,16 +1,12 @@
-<div class="domains-strip">
+<div class="domains-strip" id="domains-strip">
   <span class="domains-strip__label">Research Program</span>
   <ul class="domains-strip__list">
-    <li class="domain-pill domain-pill--all">
-      <a href="{{ "/" | relative_url }}">All articles</a>
+    <li class="domain-pill domain-pill--all domain-pill--filter-active" data-tag-filter="">
+      All articles
     </li>
     {%- for domain in site.data.research_domains -%}
-    <li class="domain-pill domain-pill--{{ domain.status }}" title="{{ domain.volume }} — {{ domain.status | capitalize }}">
-      {%- if domain.url -%}
-        <a href="{{ domain.url | relative_url }}">{{ domain.short }}</a>
-      {%- else -%}
-        <span class="domain-pill__name">{{ domain.short }}</span>
-      {%- endif -%}
+    <li class="domain-pill domain-pill--{{ domain.status }}" data-tag-filter="{{ domain.tag }}" title="{{ domain.volume }} — {{ domain.status | capitalize }}">
+      {{ domain.short }}
     </li>
     {%- endfor -%}
   </ul>

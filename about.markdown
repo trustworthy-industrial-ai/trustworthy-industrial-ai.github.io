@@ -12,7 +12,8 @@ This research program advances the engineering discipline of Trustworthy Industr
 
 1. **Engineering Knowledge** — what the AI knows
 2. **Grounded Reasoning** — how the AI reasons
-3. **Trustworthy Decisions** — why engineers should trust the decision *(current focus — see [Volume I]({{ "/volume-i/" | relative_url }}))*
+3. **Trustworthy Decisions** — why engineers should trust the decision 
+    - *see [Volume I]({{ "/volume-i/" | relative_url }})*
 4. **Industrial Agents** — how work gets executed
 5. **Industrial AI Platforms** — where intelligence lives
 6. **Operational Deployment** — how intelligence is deployed safely
