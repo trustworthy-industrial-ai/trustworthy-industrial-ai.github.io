@@ -64,6 +64,17 @@ kramdown:
 permalink: /articles/:year/:month/:day/:title/
 show_excerpts: true
 
+# Explicit nav list -- do NOT rely on the `site.pages` auto-default here.
+# jekyll-paginate-v2 leaks a computed title onto index.markdown's page.title
+# (via its `pagination.title` template), which made the paginated home page
+# show up as a second, redundant nav link reading the full site title.
+# An explicit list is immune to that regardless of what any page's
+# page.title happens to resolve to.
+header_pages:
+  - about.markdown
+  - volume-i.markdown
+  - terms.markdown
+
 # Exclude from processing
 exclude:
   - Gemfile
