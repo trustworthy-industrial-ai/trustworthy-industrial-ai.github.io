@@ -1,0 +1,63 @@
+# Engineering Trustworthy Industrial AI — site configuration
+
+title: Engineering Trustworthy Industrial AI
+email: hello@trustworthy-industrial-ai.io
+description: >-
+  Research and essays on engineering trust into industrial AI systems.
+  Volume I: The Governed Decision Layer.
+baseurl: ""
+url: "https://trustworthy-industrial-ai.github.io"
+twitter_username:
+github_username: trustworthy-industrial-ai
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections for organizing essays by research domain
+collections:
+  governance:
+    output: true
+    permalink: /governance/:path/
+  causality:
+    output: true
+    permalink: /causality/:path/
+  ot-native:
+    output: true
+    permalink: /ot-native/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+  - scope:
+      path: "_governance"
+    values:
+      layout: post
+      collection: governance
+  - scope:
+      path: "_causality"
+    values:
+      layout: post
+      collection: causality
+
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+
+permalink: /essays/:year/:month/:day/:title/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
