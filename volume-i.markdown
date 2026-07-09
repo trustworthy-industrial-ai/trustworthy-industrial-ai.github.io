@@ -5,16 +5,12 @@ nav_title: "Volume I"
 permalink: /volume-i/
 ---
 
-One of the primary focus of this applied research program is **Trustworthy Decisions** — the architectural layer responsible for turning AI reasoning into decisions that engineers can stand behind. This is where the article series concentrate.
+One of the primary focus of this applied research program is **Trustworthy Decisions** — the architectural layer responsible for turning AI reasoning into decisions that engineers can stand behind. This is where the article series concentrates.
 
-This page is the living table of contents for Volume I. New articles are added here as they're published.
+This page is a hand-curated compilation of the articles that belong to Volume I, with a short note on how each one fits the arc. Publishing an article doesn't automatically add it here — that's a deliberate editorial step, separate from tagging.
 
-{% assign volume_posts = site.posts | where: "category", "governance" | sort: "date" | reverse %}
-{% if volume_posts.size > 0 %}
-{% for post in volume_posts %}
-1. [{{ post.title | escape }}]({{ post.url | relative_url }}) <span class="volume-toc__date">{{ post.date | date: "%b %-d, %Y" }}</span>
-{% endfor -%}
+### Articles in this volume
+
+1. **[AI predicts. Agents act. But who decides?]({{ "/articles/2026/07/09/ai-predicts-agents-act-who-decides/" | relative_url }})** &mdash; Jul 9, 2026
+   Opens the volume: names the ungoverned middle between prediction and execution, and introduces the "who signs?" test.
 {: .volume-toc}
-{% else %}
-*Articles will appear here as they're published.*
-{% endif %}

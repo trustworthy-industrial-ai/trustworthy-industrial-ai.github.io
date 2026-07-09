@@ -33,7 +33,7 @@ layout: default
 
     <ul class="post-list" id="article-post-list">
       {%- for post in the_posts -%}
-      <li class="post-card">
+      <li class="post-card" data-tags="{{ post.tags | join: ' ' }}">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {%- assign plain_content = post.content | strip_html -%}
         {%- assign words = plain_content | number_of_words -%}
@@ -44,9 +44,9 @@ layout: default
         </a>
         {%- endif -%}
         <div class="post-card__meta">
-          {%- if post.category -%}
-            <span class="badge badge--{{ post.category }}">{{ post.category | capitalize }}</span>
-          {%- endif -%}
+          {%- for tag in post.tags -%}
+            <span class="badge">{{ tag | replace: "-", " " }}</span>
+          {%- endfor -%}
           <span class="post-meta">{{ post.date | date: date_format }}</span>
           <span class="post-meta post-meta--dot">&middot;</span>
           <span class="post-meta">{{ read_mins | at_least: 1 }} min read</span>
@@ -66,7 +66,7 @@ layout: default
       {%- endfor -%}
 
       {%- if paginator.page == paginator.total_pages -%}
-      <li class="post-card post-card--upcoming">
+      <li class="post-card post-card--upcoming" data-tags="">
         <div class="post-card__meta">
           <span class="badge badge--upcoming">Next article</span>
         </div>
@@ -81,6 +81,8 @@ layout: default
       </li>
       {%- endif -%}
     </ul>
+
+    <p id="no-articles-match" class="no-articles-match" hidden>No articles are tagged with this yet.</p>
 
     {%- if paginator.total_pages > 1 -%}
     <nav class="pagination-nav" aria-label="Article pagination">
