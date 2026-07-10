@@ -140,17 +140,10 @@ h1, h2, h3, .page-heading, .post-title, .site-title {
   filter: brightness(0.94);
 }
 
-.domain-pill--current {
-  background: var(--accent);
-  color: #fff;
-  cursor: pointer;
-}
-
-.domain-pill--current a {
-  color: #fff;
-  border-bottom: none !important;
-}
-
+// All 7 research-domain pills look identical regardless of whether that
+// domain currently has published content -- the only visual state that
+// changes is which one is the active filter (see --filter-active below).
+.domain-pill--current,
 .domain-pill--future {
   background: transparent;
   color: var(--faint);

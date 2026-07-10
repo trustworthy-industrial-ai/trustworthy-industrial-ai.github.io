@@ -30,6 +30,8 @@
 
     <p class="site-tagline">Engineering trust into industrial AI, one research volume at a time.</p>
 
-    {%- include domains-nav.html -%}
+    {%- if page.layout == "home" -%}
+      {%- include domains-nav.html -%}
+    {%- endif -%}
   </div>
 </header>
