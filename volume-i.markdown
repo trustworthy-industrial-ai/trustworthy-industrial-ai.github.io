@@ -11,6 +11,6 @@ This page is a hand-curated compilation of the articles that belong to Volume I,
 
 ### Articles in this volume
 
-1. **[AI predicts. Agents act. But who decides?]({{ "/articles/2026/07/09/ai-predicts-agents-act-who-decides/" | relative_url }})** &mdash; Jul 9, 2026
-   Opens the volume: names the ungoverned middle between prediction and execution, and introduces the "who signs?" test.
+1. **[The Ungoverned Middle]({{ "/articles/2026/07/11/the-ungoverned-middle/" | relative_url }})** &mdash; Jul 11, 2026
+   Opens the volume: names the ungoverned middle between prediction and execution, introduces the Governed Decision Layer, and the "who signs?" test.
 {: .volume-toc}

@@ -6,8 +6,8 @@ layout: default
   {%- if paginator.page == 1 -%}
   <div class="home-intro">
     <p class="home-intro__lede">
-      Articles on why industrial AI needs an engineered, auditable decision layer
-      between prediction and action &mdash; and what it takes to build one.
+      A research program on engineering trust into industrial AI &mdash;
+      what it must know, how it must reason, and why engineers can stand behind what it decides.
     </p>
   </div>
   {%- endif -%}
@@ -65,21 +65,6 @@ layout: default
       </li>
       {%- endfor -%}
 
-      {%- if paginator.page == paginator.total_pages -%}
-      <li class="post-card post-card--upcoming" data-tags="">
-        <div class="post-card__meta">
-          <span class="badge badge--upcoming">Next article</span>
-        </div>
-        <h3 class="post-card__title post-card__title--muted">
-          The next industrial catastrophe will involve an overconfident AI
-        </h3>
-        <p class="post-card__excerpt">
-          In process safety, a confident wrong answer is categorically worse than a refusal.
-          Publishing soon &mdash; <a href="{{ "/feed.xml" | relative_url }}">subscribe via RSS</a>
-          to get it first.
-        </p>
-      </li>
-      {%- endif -%}
     </ul>
 
     <p id="no-articles-match" class="no-articles-match" hidden>No articles are tagged with this yet.</p>
