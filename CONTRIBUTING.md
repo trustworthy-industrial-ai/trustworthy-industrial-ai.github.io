@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for your interest in the Engineering Trustworthy Industrial AI research initiative.
+Thank you for your interest in the Engineering Trustworthy Industrial Decisions in the Age of AI research initiative.
 
 This project is intended to grow as an open body of knowledge for the Industrial AI community.
 
@@ -44,7 +44,7 @@ Contributions may include:
 
 Please first determine whether your proposal:
 
-- strengthens Engineering Trustworthy Industrial AI
+- strengthens Engineering Trustworthy Industrial Decisions in the Age of AI
 - aligns with the research vision
 - improves clarity
 - adds evidence

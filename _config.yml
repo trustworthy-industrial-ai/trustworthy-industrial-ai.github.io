@@ -1,16 +1,16 @@
-# Engineering Trustworthy Industrial AI — site configuration
+# Engineering Trustworthy Industrial Decisions in the Age of AI — site configuration
 
-title: Engineering Trustworthy Industrial AI
+title: Engineering Trustworthy Industrial Decisions in the Age of AI
 author: Sanjay Prasad
-# email: intentionally unset -- hello@trustworthy-industrial-ai.io does not
-# exist yet (custom domain not purchased). Set this once that mailbox is real;
-# footer.html only renders it when site.email is present.
+# email: intentionally unset -- hello@trustworthy-industrial-decisions.io does
+# not exist yet (custom domain not purchased). Set this once that mailbox is
+# real; footer.html only renders it when site.email is present.
 description: >-
-  Research and articles on engineering trust into industrial AI systems.
+  Research and articles on engineering trustworthy industrial decisions in the age of AI.
 baseurl: ""
-url: "https://trustworthy-industrial-ai.github.io"
+url: "https://trustworthy-industrial-decisions.github.io"
 twitter_username:
-github_username: trustworthy-industrial-ai
+github_username: trustworthy-industrial-decisions
 
 # Build settings
 theme: minima

@@ -3,7 +3,7 @@ cff-version: 1.2.0
 message: >
   If you use this research, please cite it using the metadata below.
 
-title: "Engineering Trustworthy Industrial AI"
+title: "Engineering Trustworthy Industrial Decisions in the Age of AI"
 
 authors:
   - family-names: "Prasad"
@@ -12,14 +12,14 @@ authors:
 type: software
 
 abstract: >
-  Engineering Trustworthy Industrial AI is an open research initiative
-  focused on engineering trust into industrial AI systems through
-  engineering knowledge, grounded reasoning, decision governance,
-  industrial agents, and operational deployment.
+  Engineering Trustworthy Industrial Decisions in the Age of AI is an
+  open research initiative focused on engineering trust into industrial
+  decisions through engineering knowledge, grounded reasoning, governed
+  decisions, industrial agents, and operational deployment.
 
-repository-code: "https://github.com/trustworthy-industrial-ai/<repository>"
+repository-code: "https://github.com/trustworthy-industrial-decisions/<repository>"
 
-url: "https://trustworthy-industrial-ai.github.io"
+url: "https://trustworthy-industrial-decisions.github.io"
 
 license: "CC-BY-4.0"
 
@@ -44,11 +44,11 @@ preferred-citation:
     - family-names: "Prasad"
       given-names: "Sanjay"
 
-  title: "Engineering Trustworthy Industrial AI"
+  title: "Engineering Trustworthy Industrial Decisions in the Age of AI"
 
   institution:
-    name: "Engineering Trustworthy Industrial AI Research Initiative"
+    name: "Engineering Trustworthy Industrial Decisions Research Initiative"
 
   year: 2026
 
-  url: "https://trustworthy-industrial-ai.github.io"
+  url: "https://trustworthy-industrial-decisions.github.io"

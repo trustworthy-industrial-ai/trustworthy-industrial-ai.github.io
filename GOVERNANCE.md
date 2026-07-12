@@ -10,7 +10,7 @@
 
 # Versioning Policy
 
-The Engineering Trustworthy Industrial AI research initiative treats ideas, frameworks, and reference architectures as evolving engineering artifacts.
+The Engineering Trustworthy Industrial Decisions in the Age of AI research initiative treats ideas, frameworks, and reference architectures as evolving engineering artifacts.
 
 Each major artifact (framework, terminology, reference architecture, research volume, etc.) maintains an independent version number.
 
@@ -65,7 +65,7 @@ Each artifact evolves independently.
 
 Examples:
 
-Engineering Trustworthy Industrial AI
+Engineering Trustworthy Industrial Decisions in the Age of AI
 Version: 1.0
 
 The Governed Decision Layer

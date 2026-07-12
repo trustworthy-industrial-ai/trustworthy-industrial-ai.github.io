@@ -29,8 +29,8 @@ This research program advances the engineering discipline of Trustworthy Industr
 
 ### Get involved
 
-- [Contributing](https://github.com/trustworthy-industrial-ai/trustworthy-industrial-ai.github.io/blob/main/CONTRIBUTING.md)
-- [Governance](https://github.com/trustworthy-industrial-ai/trustworthy-industrial-ai.github.io/blob/main/GOVERNANCE.md)
+- [Contributing](https://github.com/trustworthy-industrial-decisions/trustworthy-industrial-decisions.github.io/blob/main/CONTRIBUTING.md)
+- [Governance](https://github.com/trustworthy-industrial-decisions/trustworthy-industrial-decisions.github.io/blob/main/GOVERNANCE.md)
 
 ### About the author
 

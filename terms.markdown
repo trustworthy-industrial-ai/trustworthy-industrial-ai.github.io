@@ -70,4 +70,4 @@ Engineering Trust &middot; Industrial Decision Intelligence &middot; Decision Pr
 
 ---
 
-Changes to canonical terminology follow the process described in [GOVERNANCE.md](https://github.com/trustworthy-industrial-ai/trustworthy-industrial-ai.github.io/blob/main/GOVERNANCE.md). Please cite the originating article or framework when referencing these terms.
+Changes to canonical terminology follow the process described in [GOVERNANCE.md](https://github.com/trustworthy-industrial-decisions/trustworthy-industrial-decisions.github.io/blob/main/GOVERNANCE.md). Please cite the originating article or framework when referencing these terms.

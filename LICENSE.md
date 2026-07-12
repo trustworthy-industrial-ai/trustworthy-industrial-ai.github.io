@@ -2,7 +2,7 @@
 
 Copyright © 2026 Sanjay K Prasad
 
-This repository is part of the **Engineering Trustworthy Industrial AI** research initiative.
+This repository is part of the **Engineering Trustworthy Industrial Decisions in the Age of AI** research initiative.
 
 Unless otherwise stated, all original content in this repository—including articles, essays, documentation, diagrams, figures, illustrations, reference architectures, and other written material—is licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** License.
 
@@ -23,7 +23,7 @@ https://creativecommons.org/licenses/by/4.0/
 
 # Book Project
 
-This repository forms part of an ongoing long-term research program on **Engineering Trustworthy Industrial AI**.
+This repository forms part of an ongoing long-term research program on **Engineering Trustworthy Industrial Decisions in the Age of AI**.
 
 Selected concepts, essays, figures, and reference architectures published here may evolve into chapters of a forthcoming book and related publications.
 
@@ -43,7 +43,7 @@ If this work contributes to your research, publication, presentation, standards 
 
 Suggested citation:
 
-> Sanjay Prasad. *Engineering Trustworthy Industrial AI*. GitHub Research Project. https://<github-org>.github.io
+> Sanjay Prasad. *Engineering Trustworthy Industrial Decisions in the Age of AI*. GitHub Research Project. https://<github-org>.github.io
 
 Where practical, please also cite the specific article, framework, or diagram that informed your work.
 

@@ -1,8 +1,8 @@
-# Citing Engineering Trustworthy Industrial AI
+# Citing Engineering Trustworthy Industrial Decisions in the Age of AI
 
 Thank you for referencing this work.
 
-This repository is part of the **Engineering Trustworthy Industrial AI** research initiative, an open body of work exploring how engineering knowledge, grounded reasoning, decision governance, and industrial systems engineering can be combined to build trustworthy Industrial AI.
+This repository is part of the **Engineering Trustworthy Industrial Decisions in the Age of AI** research initiative, an open body of work exploring how engineering knowledge, grounded reasoning, decision governance, and industrial systems engineering can be combined to build trustworthy Industrial AI.
 
 If this work contributes to your research, publication, standards activity, presentation, software, training material, or educational content, please cite the original source.
 
@@ -14,16 +14,16 @@ Use this when referring to the overall body of work.
 
 **APA**
 
-> Prasad, S. (2026). *Engineering Trustworthy Industrial AI*. Engineering Trustworthy Industrial AI Research Initiative. https://<github-org>.github.io
+> Prasad, S. (2026). *Engineering Trustworthy Industrial Decisions in the Age of AI*. Engineering Trustworthy Industrial Decisions in the Age of AI Research Initiative. https://<github-org>.github.io
 
 **BibTeX**
 
 ```bibtex
 @misc{prasad2026etiai,
   author       = {Sanjay Prasad},
-  title        = {Engineering Trustworthy Industrial AI},
+  title        = {Engineering Trustworthy Industrial Decisions in the Age of AI},
   year         = {2026},
-  publisher    = {Engineering Trustworthy Industrial AI Research Initiative},
+  publisher    = {Engineering Trustworthy Industrial Decisions in the Age of AI Research Initiative},
   url          = {https://<github-org>.github.io}
 }
 ```
@@ -36,7 +36,7 @@ When citing a specific article, please reference both the article title and the 
 
 Example:
 
-> Prasad, S. (2026). *The Governed Decision Layer*. Engineering Trustworthy Industrial AI Research Initiative.
+> Prasad, S. (2026). *The Governed Decision Layer*. Engineering Trustworthy Industrial Decisions in the Age of AI Research Initiative.
 
 ---
 
@@ -44,7 +44,7 @@ Example:
 
 If you reuse a figure, diagram, framework, or illustration, please include attribution such as:
 
-> Figure adapted from Sanjay Prasad, *Engineering Trustworthy Industrial AI*, CC BY 4.0.
+> Figure adapted from Sanjay Prasad, *Engineering Trustworthy Industrial Decisions in the Age of AI*, CC BY 4.0.
 
 If modifications have been made, please indicate that the figure has been adapted.
 
@@ -56,7 +56,7 @@ When referencing a framework (for example, ASSET-grade or the Governed Decision 
 
 Example:
 
-> Based on the ASSET-grade framework described by Sanjay Prasad in *Engineering Trustworthy Industrial AI*.
+> Based on the ASSET-grade framework described by Sanjay Prasad in *Engineering Trustworthy Industrial Decisions in the Age of AI*.
 
 ---
 
@@ -72,7 +72,7 @@ If this material is used in presentations, workshops, university courses, certif
 
 Suggested attribution:
 
-> Source: Sanjay Prasad — Engineering Trustworthy Industrial AI (CC BY 4.0)
+> Source: Sanjay Prasad — Engineering Trustworthy Industrial Decisions in the Age of AI (CC BY 4.0)
 
 ---
 
