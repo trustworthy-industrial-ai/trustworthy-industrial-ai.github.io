@@ -64,6 +64,13 @@ kramdown:
 permalink: /articles/:year/:month/:day/:title/
 show_excerpts: true
 
+# Post dates are used to control reading order and URL structure, not as a
+# real publish gate -- this repo has no separate scheduling mechanism, so
+# without `future: true` a post dated even a few hours ahead of the exact
+# build time silently fails to appear until another push happens after that
+# time passes.
+future: true
+
 # Explicit nav list -- do NOT rely on the `site.pages` auto-default here.
 # jekyll-paginate-v2 leaks a computed title onto index.markdown's page.title
 # (via its `pagination.title` template), which made the paginated home page

@@ -3,7 +3,7 @@ layout: post
 title: "Correlation Runs the Dashboard. Causation Runs the Plant."
 description: "A breadth post, not a deep dive: why grounded reasoning — not just accurate prediction — is what industrial AI owes the plant."
 author: "Dr. Sanjay K Prasad"
-date: 2026-07-14 08:00:00 +0300
+date: 2026-07-14 08:00:00 +0530
 tags: [grounded-reasoning]
 excerpt_separator: <!--more-->
 ---

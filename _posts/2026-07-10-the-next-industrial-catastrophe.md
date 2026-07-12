@@ -3,7 +3,7 @@ layout: post
 title: "The Next Industrial Catastrophe Will Involve an Overconfident AI"
 description: "It won't be the cause. It will be the reason nobody caught the cause. Why the cost of a confident wrong answer is not the same as the cost of a refusal — and why almost no AI system is built to know the difference."
 author: "Dr. Sanjay K Prasad"
-date: 2026-07-10 08:00:00 +0300
+date: 2026-07-10 08:00:00 +0530
 tags: [foundations]
 excerpt_separator: <!--more-->
 ---

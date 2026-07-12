@@ -2,7 +2,7 @@
 layout: post
 title: "The Ungoverned Middle"
 description: "AI predicts. Agents act. The decision between them is where trust is won or lost — and today, almost nobody engineers it."
-date: 2026-07-12 18:00:00 +0300
+date: 2026-07-12 18:00:00 +0530
 author: "Dr. Sanjay K Prasad"
 tags: [governed-decision-layer, who-signs]
 excerpt_separator: <!--more-->
