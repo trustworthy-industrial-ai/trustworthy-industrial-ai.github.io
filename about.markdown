@@ -6,7 +6,7 @@ permalink: /about/
 
 Industrial AI is entering an era of unprecedented capability. Large language models, foundation models, industrial agents, digital twins, and optimization are all advancing quickly.
 
-Capability alone is not enough. Industrial AI must earn trust — and trust must be engineered.
+Capability alone is not enough. Industrial AI must enable decisions, and Decisions must earn trust — and trust must be engineered.
 
 This research program advances the engineering discipline of Trustworthy Industrial Decisions in the Age of AI. It's organized around seven areas that are expected to stay relevant even as the underlying technology changes:
 
