@@ -17,9 +17,12 @@ This page is a hand-curated compilation of the articles that belong to Volume I,
 2. **[The Ungoverned Middle]({{ "/articles/2026/07/12/the-ungoverned-middle/" | relative_url }})** &mdash; Jul 12, 2026
    One seam of the problem, up close: the decision layer between prediction and execution, the Governed Decision Layer, and the "who signs?" test.
 
-3. **[Correlation Runs the Dashboard. Causation Runs the Plant.]({{ "/articles/2026/07/14/correlation-runs-the-dashboard/" | relative_url }})** &mdash; Jul 14, 2026
+<!--
+3. **[Correlation Runs the Dashboard. Causation Runs the Plant.]({{ "/articles/2026/07/14/correlation-runs-the-dashboard/" | relative_url }})** &mdash; Planned Jul 14, 2026
    A different seam of the same problem: why grounded reasoning, not just accurate prediction, is what a plant actually needs.
 
-4. **[Engineering Trustworthy Industrial AI]({{ "/articles/2026/07/18/engineering-trustworthy-industrial-ai/" | relative_url }})** &mdash; Jul 18, 2026
+4. **[Engineering Trustworthy Industrial AI]({{ "/articles/2026/07/18/engineering-trustworthy-industrial-ai/" | relative_url }})** &mdash; Planned Jul 18, 2026
    The reveal: these are two of seven dimensions a whole research program is organized around. The map, in full.
 {: .volume-toc}
+-->
+
