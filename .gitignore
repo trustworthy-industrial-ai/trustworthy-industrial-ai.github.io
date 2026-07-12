@@ -4,3 +4,9 @@ _site
 .jekyll-metadata
 vendor
 .DS_Store
+
+# Local-only working notes -- never meant for this public repo.
+# Deliberately untracked: LinkedIn drafts (unreviewed/unapproved copy)
+# and competitive-intelligence research notes.
+/social/
+/research/
